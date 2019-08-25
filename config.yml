@@ -30,10 +30,7 @@ steps:
     actions: 
       - type: createIssue
         title: Hello world
-        body: hello-world.md
-      - type: respond
-        with: 01-compile.md
-        issue: 1
+        body: 02-hello-world.md
 
   - title: Hello World
     description: Write a basic hello world program in Ruby
