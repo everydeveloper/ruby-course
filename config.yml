@@ -1,0 +1,100 @@
+title: Introduction to Ruby
+tagline: Make your first Ruby program
+description: Learn the basics of Ruby. Make a hello world program, then include if/else statements
+tags:
+  - Ruby
+
+template:
+  name: ruby-course
+  repo: ruby-course-template
+  description: An introduction to Ruby
+before:
+  - type: createIssue
+    title: Introduction
+    body: 01-intro.md
+
+steps:
+  - title: Introduction
+    description: Introduction to Ruby
+    event: issue_comment
+    link: "{{ repoUrl }}/issues/1"
+    actions: 
+      - type: respond
+        with: 01-setup.md
+        issue: 1
+
+  - title: Set-up
+    description: Install and setup your developer environment
+    event: issues.closed
+    link: "{{ repoUrl }}/issues/1"
+    actions: 
+      - type: createIssue
+        title: Hello world
+      - type: respond
+        with: 01-compile.md
+        issue: 1
+
+  - title: Hello World
+    description: Write a basic hello world program in Ruby
+    event: issue_comment
+    link: "{{ repoUrl }}/issues/2"
+    actions: 
+      - type: gate
+        left: '%payload.comment.body%'
+        operator: ==
+        right: c
+        else: 
+          - type: respond
+            with: incorrect.md
+            issue: 2
+      - type: respond
+        with: 02-running.md
+        issue: 2
+
+  - title: Running a Ruby Program
+    description: Learn how to run our hello world program
+    event: push
+    link: "{{ repoUrl }}/issues/2"
+    actions:
+      - type: respond
+        with: 02-complete.md
+        issue: 2
+      - type: createIssue
+        title: Using Ruby Methods
+        body: 03-methods.md
+      - type: closeIssue
+        issue: 2
+
+  - title: Using Ruby Methods
+    description: Ruby comes with many pre-built methods
+    event: push
+    link: "{{ repoUrl }}/issues/3"
+    actions:
+      - type: respond
+        with: 03-complete.md
+        issue: 3
+      - type: createIssue
+        title: If/Else Statements
+        body: 04-if.md
+      - type: closeIssue
+        issue: 3
+
+  - title: If/Else Statements
+    description: If Statements give you control of how to respond if a condition is true
+    event: push
+    link: "{{ repoUrl }}/issues/4"
+    actions:
+      - type: respond
+        with: 04-else.md
+        issue: 4
+
+  - title: Else Statements
+    description: Else statements give you a default reponse if a condition is false
+    event: push
+    link: "{{ repoUrl }}/issues/4"
+    actions:
+      - type: respond
+        with: 04-complete.md
+        issue: 4
+      - type: closeIssue
+        issue: 4
