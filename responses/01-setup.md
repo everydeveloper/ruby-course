@@ -35,4 +35,4 @@ Most machines come with a basic text editor that you can use to get started, tho
 
 With all that installed, we have what we need to begin writing our Ruby program!
 
-*Close this issue, then [click here]({{ repoUrl/issues/2 }}) for the next step*
+*Close this issue, then [click here]({{ repoUrl }}/issues/2 ) for the next step*
