@@ -30,6 +30,7 @@ steps:
     actions: 
       - type: createIssue
         title: Hello world
+        body: hello-world.md
       - type: respond
         with: 01-compile.md
         issue: 1
