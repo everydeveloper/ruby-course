@@ -1,4 +1,4 @@
-Alright, {{ inputUserName }} before we dive into the tutorial, there are a couple of steps we need to take to set up our work environment.
+Alright {{ inputUserName }}, before we dive into the tutorial, there are a couple of steps to set up our work environment.
 - [ ] Install Ruby onto our machine
 - [ ] Check that Git is installed
 - [ ] Clone this project repository onto our machine
