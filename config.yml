@@ -67,7 +67,7 @@ steps:
         title: Using Ruby Methods
         body: 03-methods.md
         data:
-          inputUserName: '%actions.intro.data.inputUserName%'
+          inputUserName: '%actions.intro.inputUserName%'
       - type: closeIssue
         issue: 2
 
