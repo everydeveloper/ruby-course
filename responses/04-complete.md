@@ -1,4 +1,4 @@
-🎊Congratulations {{ inputUserName }}! You've written and ran a Ruby program that not only prints strings, but takes user input and prints one of two separate responses depending on that input. Great job and if you are ready to learn more, you can check out the [Learning Lab](https://lab.github.com/) for more courses. 
+🎊Congratulations! You've written and ran a Ruby program that not only prints strings, but takes user input and prints one of two separate responses depending on that input. Great job and if you are ready to learn more, you can check out the [Learning Lab](https://lab.github.com/) for more courses. 
 
 Now that you've completed this tutorial, there are plenty more concepts to dive into. 
 

@@ -66,8 +66,6 @@ steps:
       - type: createIssue
         title: Using Ruby Methods
         body: 03-methods.md
-        data:
-          inputUserName: '%actions.intro.inputUserName%'
       - type: closeIssue
         issue: 2
 
@@ -79,8 +77,6 @@ steps:
       - type: respond
         with: 03-complete.md
         issue: 3
-        data:
-          inputUserName: '%actions.intro.data.inputUserName%'
       - type: createIssue
         title: Using If/Else Statements
         body: 04-if.md
@@ -104,7 +100,5 @@ steps:
       - type: respond
         with: 04-complete.md
         issue: 4
-        data:
-          inputUserName: '%actions.intro.data.inputUserName%'
       - type: closeIssue
         issue: 4

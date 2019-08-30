@@ -13,7 +13,7 @@ The seventh line introduces a new method, `gets`, and a variable called `name`.
 
 What the `gets` method does is tell the computer to pause for input from the user. Our program will pause to allow us to enter in any text we want, and when we're ready to resume the program, we can press the ENTER key. Our inputs are then captured and converted to a string.
 
-Variables are a way to store information. Similar to how methods are used to store code that can later be used by calling the method, variables store information like strings that can later be accessed by calling the variable. For example, if I assign the string `{{ inputUserName }}` to the variable `name`, I could then call `puts name` and the output would be the string `{{ inputUserName }}`. 
+Variables are a way to store information. Similar to how methods are used to store code that can later be used by calling the method, variables store information like strings that can later be accessed by calling the variable. For example, if I assign the string `Octocat` to the variable `name`, I could then call `puts name` and the output would be the string `Octocat`. 
 
 We put this to use in our eighth line of code. Uncomment the eighth line and your project should have the following code:
 ```ruby
