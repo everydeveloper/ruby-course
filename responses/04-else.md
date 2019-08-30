@@ -19,5 +19,5 @@ If/Else statements are powerful tools and knowing how to use them will prove fun
 ```console
 git add .
 git commit -m"add else statement"
-git push origin master
+git push
 ```

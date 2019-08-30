@@ -31,6 +31,9 @@ steps:
     event: issues.closed
     link: "{{ repoUrl }}/issues/1"
     actions: 
+      - type: respond
+        with: 01-complete.md
+        issue: 1
       - type: createIssue
         title: Run a 'hello world' program 
         body: 02-hello-world.md

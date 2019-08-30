@@ -49,5 +49,5 @@ puts "Hey, #{name}! Nice to meet you!"
 ```console
 git add .
 git commit -m"add ruby methods"
-git push origin master
+git push
 ```
