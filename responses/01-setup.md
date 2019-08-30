@@ -19,14 +19,10 @@ git --version
 If you see a Git version, you're all set. If you don't see a Git version, then you'll need to [install Git](https://git-scm.com/downloads) for your operating system.
 
 ## Clone the Repository
-Now that we've got Ruby and Git installed, we're going to clone this repository from Github so we can make changes. 
+Now that we've got Ruby and Git installed, we're going to clone this repository from GitHub so we can make changes. 
 
-I'm going to have us clone the repo onto our desktops. To do that, type the following into the command line:
-```
-cd desktop
-```
-Now that we're in our desktop, we're going to clone the repo by typing:
-```
+Open your console and navigate to the folder you want to work in, then enter:
+```console
 git clone {{ repoUrl }}.git
 ```
 You should see a folder called ruby-course on your desktop, and inside that folder you'll see three files:
