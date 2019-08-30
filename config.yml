@@ -10,11 +10,11 @@ template:
   description: An introduction to Ruby
 before:
   - type: createIssue
-    title: Introduction
+    title: Set up your environment
     body: 01-intro.md
 
 steps:
-  - title: Introduction
+  - title: Set up your environment
     description: Introduction to Ruby
     event: issue_comment
     link: "{{ repoUrl }}/issues/1"
@@ -22,6 +22,9 @@ steps:
       - type: respond
         with: 01-setup.md
         issue: 1
+        action_id: intro
+        data:
+          inputUserName: '%payload.comment.body%'
 
   - title: Set-up
     description: Install and setup your developer environment
@@ -29,10 +32,10 @@ steps:
     link: "{{ repoUrl }}/issues/1"
     actions: 
       - type: createIssue
-        title: Hello world
+        title: Run a 'hello world' program 
         body: 02-hello-world.md
 
-  - title: Hello World
+  - title: Run a 'hello world' program 
     description: Write a basic hello world program in Ruby
     event: issue_comment
     link: "{{ repoUrl }}/issues/2"
@@ -60,6 +63,8 @@ steps:
       - type: createIssue
         title: Using Ruby Methods
         body: 03-methods.md
+        data:
+          inputUserName: '%actions.intro.data.inputUserName%'
       - type: closeIssue
         issue: 2
 
@@ -71,13 +76,15 @@ steps:
       - type: respond
         with: 03-complete.md
         issue: 3
+        data:
+          inputUserName: '%actions.intro.data.inputUserName%'
       - type: createIssue
-        title: If/Else Statements
+        title: Using If/Else Statements
         body: 04-if.md
       - type: closeIssue
         issue: 3
 
-  - title: If/Else Statements
+  - title: Using If/Else Statements
     description: If Statements give you control of how to respond if a condition is true
     event: push
     link: "{{ repoUrl }}/issues/4"
@@ -94,5 +101,7 @@ steps:
       - type: respond
         with: 04-complete.md
         issue: 4
+        data:
+          inputUserName: '%actions.intro.data.inputUserName%'
       - type: closeIssue
         issue: 4

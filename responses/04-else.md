@@ -16,3 +16,8 @@ What's great about Else statements is it gives us developers control over what h
 If/Else statements are powerful tools and knowing how to use them will prove fun and useful as you continue your journey of programming.
 
 *Commit and push these final changes to the repo.*
+```console
+git add .
+git commit -m"add else statement"
+git push origin master
+```

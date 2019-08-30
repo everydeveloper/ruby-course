@@ -1,4 +1,9 @@
-# Setup Environment
+Alright, {{ inputUserName }} before we dive into the tutorial, there are a couple of steps we need to take to set up our work environment.
+- [ ] Install Ruby onto our machine
+- [ ] Check that Git is installed
+- [ ] Clone this project repository onto our machine
+- [ ] Install a text editor onto our machine 
+
 ## Install Ruby
 You might not need to install Ruby on your machine if it is already installed. You can figure that out by opening up your command line and typing: 
 ```
@@ -31,8 +36,8 @@ You should see a folder called ruby-course on your desktop, and inside that fold
 * README.md – a markdown introduction to this tutorial. 
 
 ## Install a Text Editor
-Most machines come with a basic text editor that you can use to get started, though I recommend installing an editor that is a bit more robust. Some popular ones are [Atom](https://atom.io/), [VS Code](https://code.visualstudio.com/), and [Sublime Text](https://www.sublimetext.com/). All three are very powerful and offer plenty of add-ons to help streamline your workflow, though if you're just getting your feet wet and want something lightweight, I recommend [downloading Brackets](http://brackets.io/). This is what I use and I feel it's a great editor to start off with.
+Most machines come with a basic text editor that you can use to get started, though I recommend installing an editor that is a bit more robust. Some popular ones are [Atom](https://atom.io/), [VS Code](https://code.visualstudio.com/), and [Sublime Text](https://www.sublimetext.com/). 
 
 With all that installed, we have what we need to begin writing our Ruby program!
 
-*Close this issue, then [click here]({{ repoUrl }}/issues/2 ) for the next step*
+*Close this issue for the next step*

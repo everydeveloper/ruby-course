@@ -32,7 +32,7 @@ git add .
 Commit the changes and enter a message describing the commit: 
 
 ```
-git commit -m "Hello World!"
+git commit -m "Hello World"
 ```
 
 Push the changes to the repository:
